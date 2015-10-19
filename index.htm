@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<title>My first page:)</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body bgcolor="#e5fbf7" text="#333">
+<body > <!-- bgcolor="#e5fbf7" text="#333"-->
 
 <p id="top">This is what I've always done, but that "mv * directory1" or <strong>"git mv * directory1"</strong> step results in one massive commit which looks like a zillion file deletions followed by a zillion file adds. Is there no way to get filter-branch to leave the directory structure alone?</p>
 <br>
@@ -31,9 +32,9 @@
 <img src="img/like_icon.png">
 
 <br>
-<h1 style=" font-family: Arial, Heventice, sans-serif;">Title 1</h1>
-<h2>Title 2</h2>
-<h3>Title 3</h3>
+<h1 style=" font-family: Arial, Heventice, sans-serif;" class="h1">Title 1</h1>
+<h2 class="h2">Title 2</h2>
+<h3 class="h3">Title 3</h3>
 <h4>Title 4</h4>
 <h5>Title 5</h5>
 <h6>Title 6</h6>
@@ -70,40 +71,68 @@
 </tr>
 </table>
 <br>
-<form>
+<form name="form_login">
 	<label for="form1">Login</label>
-	<input type="text"; name="login"; id="form1">
-</form>
-<br>
-<form>
+	<input type="text"; name="login"; id="form1"; placeholder="Login" required>
+	<br><br>
+	<lable for="email">Email</label>
+	<input type="email" name="email" id="email" required>
 	<label for="form2">Password</label>
 	<input type="text"; name="password"; id="form2">
-	<button type="button">Submit</button>
+	<button type="submit"; name="button_submit">Submit</button>
+	<br><br>
+	<textarea></textarea>
+	<br><br>
+	<select name="select_punkt">
+		<option>Пунктик номер 1</option>
+		<option>Пунктик номер 2</option>
+	</select>
+	<select size="4" multiple name="select_punkt_mult">
+		<option>номер 1</option>
+		<option>номер 2</option>
+		<option>номер 3</option>
+		<option>номер 4</option>
+		<option>номер 5</option>
+	</select>	
+	<br><br>
+	<fieldset>
+		<label for="chk_drink1"><input type="checkbox"; name="chk_drink1"; id="chk_drink1";>Чай</label>
+		<label for="chk_drink2"><input type="checkbox"; name="chk_drink2"; id="chk_drink2">Кофе</label>
+		<label for="chk_drink3"><input type="checkbox"; name="chk_drink3"; id="chk_drink3">Сок</label>
+	</fieldset>
+	<br><br>
+	<fieldset>
+		<label for="rdo_drink1"><input type="radio"; name="rdo_drink"; id="rdo_drink1" checked>Чай</label>
+		<label for="rdo_drink2"><input type="radio"; name="rdo_drink"; id="rdo_drink2">Кофе</label>
+		<label for="rdo_drink3"><input type="radio"; name="rdo_drink"; id="rdo_drink3";>Сок</label>
+	</fieldset>
+	<button type="submit" name="button_submit">Submit</button>
+	<fieldset>
+		<input type="file" name="upload_file">
+		<br>
+		<input type="time" name="inp_date">
+	</fieldset>	
 </form>
 
+<br>
+<p id="top" class="myDiv p1">This is what I've always done, but that "mv * directory1" or <strong>"git mv * directory1"</strong> step results in one massive commit which looks like a zillion file deletions followed by a zillion file adds. Is there no way to get filter-branch to leave the directory structure alone?</p>
+<br>
+<p class="myDiv p2">This is cool, but it seems that you can only see the old history if you do git log <em>--follow [file]</em> , which is kinda inconvenient, especially in a large project. am i missing something? is there a way to modify this process so that the --follow is not required?</p>
+<br>
+<p class="h3">This is cool, but it seems that you can only see the old history if you do git log <em>--follow [file]</em> , which is kinda inconvenient, especially in a large project. am i missing something? is there a way to modify this process so that the --follow is not required?</p>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Comment-->
-<table colls=4>
-<tr>
-	<td>
-		<form>
-			<img src="img/like_icon.png" alt="Like" title="like_icon">
-			<input type="button"; value="read more"; style="width:124pt; height:25pt; background-color:#e2534b; color:#fff; font-size:9pt; font-weight: bold;">
-		</form>
-	</td>
-</tr>
-
-
-
-
-
-
-</table>
-
-
-
-
-
-
 
 
 </body>	
