@@ -1,11 +1,6 @@
 body {
 	background-color:#ABAB8F;
 }
-.site_name {
-	font-size: 22px;
-	font-weight: 900;
-	text-transform: uppercase;
-}
 .post_head {
 	color: #c00;
 	letter-spacing: 2px;
@@ -19,16 +14,14 @@ body {
 }
 
 .post_title {
-	margin: 5px;
 	font-size: 36px;
 }
 
 .post_subtitle {
-	margin: 5px;
 	font-size: 24px;
 }
 
-.post_journ_name {
+.post_jour_name {
 	font-size: 15px;
 	font-weight: bold;
 	padding-left: 20px;
@@ -58,29 +51,7 @@ body {
 	font-size: 22px;
 	font-weight: 600;
 	margin: 10px 5px 0px 5px;
+
 }
-.director {
-	font-size: 15px;
-	font-weight: 600;
-	margin-top: 5px;
-}
-.adress {
-	font-size: 15px;
-}
-.adress_link {
-	font-size: 15px;
-	text-decoration: underline;
-	margin-bottom: 15px;
-}
-figure {
-	margin: 5px;
-}
-figurecaption {
-	display: inline-flex;
-}
-footer {
-	border-top: solid 1px #cccccc;
-	border-bottom: solid 1px #cccccc;
-    clear: both;
-    margin: 10px 5px 10px 5px;
-}
+
+
