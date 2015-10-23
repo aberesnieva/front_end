@@ -5,7 +5,8 @@ body {
 	font-size: 22px;
 	font-weight: 900;
 	text-transform: uppercase;
-	text-shadow:1px 2px 1px rgba(94, 174, 255, 0.41); 
+	text-shadow:1px 2px 1px rgba(94, 174, 255, 0.41);
+	margin-right: 10px;
 }
 .site_name:first-letter {
 	font-size: 300%;
@@ -93,5 +94,11 @@ footer {
 a[href="google.com"] {
     background-color: yellow;
 }
-div[]
+.head_link {
+	border-right: solid 1px rgb(204, 204, 204);
+	padding: 5px;
+}
+.last_link {
+	border-right-style: none;
+}
 
