@@ -97,8 +97,38 @@ a[href="google.com"] {
 .head_link {
 	border-right: solid 1px rgb(204, 204, 204);
 	padding: 5px;
+	display: inline;
 }
-.last_link {
+.head_link:last-child {
 	border-right-style: none;
 }
+.icon_style {
+	height: 15px;
+	width: 15px;
+	margin: 2px;
+}
+.span_display {
+	background-color: rgb(204, 204, 204);
+	display: inherit;
+}
+.mainMenu {
+	margin: 20px;
+}
+.MenuItem {
+	display: inline-block;
+	margin: 4px 10px 4px 26px;
+	color: #333;
+	border-right: 1px solid #333;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url(img/flag_icon.png);
+	background-size: 8px 6px;
 
+}
+.MenuItem.hover {
+	background-color: #cccccc;
+}
+.div_shadow {
+	box-shadow: 0 0 10px #777777;
+	border-radius: 10px;
+}

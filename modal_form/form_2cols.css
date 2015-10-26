@@ -1,0 +1,34 @@
+
+.menu_left {
+	display: inline;
+}
+
+
+.page {
+    margin-left: 200px;
+}
+.maincontent {
+    float: right;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+.menuleftcontent{
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+    background-color: #CCCCCC;
+    position: fixed;
+
+}
+.firstcontent {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.content_head {
+	font-family: Open Sans Semibold;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #7f8c8c;
+	margin-left: 5px;
+}

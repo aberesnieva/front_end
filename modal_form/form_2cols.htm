@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form with menu</title>
+	<link href="form_2cols.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- <menu type="context" id="mymenu" class="left_menu">
+  <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png">
+  Refresh</menuitem>
+  <menu label="Share on...">Share on...
+    <menuitem label="Twitter" icon="ico_twitter.png"
+    onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);">
+    Twitter</menuitem>
+    <menuitem label="Facebook" icon="ico_facebook.png"
+    onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);">
+    Facebook</menuitem>
+  </menu>
+  <menuitem label="Email This Page"
+  onclick="window.location='mailto:?body='+window.location.href;">Email This Page</menuitem>	
+</menu> 
+
+<h2>Horizontal List</h2>
+
+<ul id="menu" class="left_menu">
+  <li><a href="/html/default.asp">HTML</a></li>
+  <li><a href="/css/default.asp">CSS</a></li>
+  <li><a href="/js/default.asp">JavaScript</a></li>
+  <li><a href="/php/default.asp">PHP</a></li>
+</ul>  
+
+<ul class="menu_left">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">Contacts</a></li>
+</ul>-->
+
+<div id="page" class="page">
+    <div id="maincontent" class="maincontent">
+    	<div id="firstcontent" class="content_head">First menu</div>
+        <div class="firstcontent">Understand that most of your height will be determined by genetics of your family. Height is a polygenic trait, meaning that it's influenced by several different genes. Having two short parents doesn't necessarily mean you'll be short, just as two tall parents won't make you a towering giant.
+		These are the traditional values for text-align:</div>
+
+		<div class="firstcontent">left - The default value. Content aligns along the left side.
+		right - Content aligns along the right side.
+		center - Content centers between the left and right edges. White space on the left and right sides of each line should be equal.
+		justify - Content spaces out such that as many blocks fit onto one line as possible and the first word on that line is along the left edge and the last word is along the right edge.
+		inherit - The value will be whatever the parent element's is.
+		"Content" is used here as as term instead of "text", because while text-align certainly affects text, it affects all inline or inline-block elements in that container.</div>
+
+		<div class="firstcontent">There are two new values in CSS3 as well, start and end. These values make multiple language support easier For example, English is a left-to-right (ltr) language and Arabic is a left-to-right (rtl) language. Using "right" and "left" for values is too rigid and doesn't adapt as the direction changes. These new values do adapt:</div>
+
+		<div class="firstcontent">start - Same as "left" in ltr, same as "right" in rtl.
+		end - Same as "right" in ltr, same as "left" in rtl.</div>
+
+		<div class="firstcontent">There is also match-parent, which is similar to inherit, only that the new value is calculated against the current element's direction instead of, you know, not doing that.</div>
+
+		<div class="firstcontent">There are a few things in the spec that don't have any browser support yet. One is the value "start end" which would align the first line as if was "start" and any subsequent lines as if it was "end". Another is giving the value a string, like text-align: "." start; The text will aline along the first occurrence of that , as in to line up a column of numbers along a decimal point.</div>
+
+		<div id="secondcontent" class="content_head">Second menu</div>
+        <div class="secondcontent">secondcontent</div>
+    </div>
+    <div class="menuleftcontent">
+        <ul class="menu">
+            <li><a href="#firstcontent">First menu</a></li>
+            <li><a href="#secondcontent">Second menu</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+</body>	
+</html>
