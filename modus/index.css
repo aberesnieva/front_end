@@ -1,0 +1,35 @@
+.blogpage_row {
+	overflow: hidden;
+	background-color: #eee;
+	padding-left: 10px;
+	padding-right: 10px;
+	float:center;
+}
+.content_body {margin: 0;}
+.cell_space {
+	margin-right: 30px;
+}
+.grid_cell {
+	float: left;
+	background-color: #E6AD91;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.slideshow_cell {
+	width: 1190px;
+	background-color: #7f8c8c;
+	padding: 0;
+}
+.headline_viewmore {width: 1170px;}
+.readmore_cell {width: 270px;}
+
+.text1_cell {
+	width: 1190px;
+	padding: 0;
+	background-color: #bbb;
+	text-align: center;
+}
+.pict3_cell1 {
+	
+}

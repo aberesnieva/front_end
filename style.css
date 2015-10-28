@@ -23,3 +23,38 @@ body {
 	line-height: 45px;
 
 }
+.ul_style {
+	list-style-type: square;
+	list-style-position: inside;
+	list-style-image: url("img/key_icon.png");
+
+}
+.table_style {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+th {text-align: middle;}
+td {vertical-align: middle; }
+
+.table_style tr:nth-child(odd) {
+	background-color: #A6A934;
+}
+.table_style tr.table_head {
+	background-color: #e8645a;
+	font-weight: 600;
+}
+.menu_cell {
+	float: left;
+	background-color: #eee;
+	padding: 5px;
+	margin: 5px; 
+}
+.bg_check {
+	background-color: #A6A934;
+}
+.menu_row {
+	overflow: hidden;
+	background-color: #e8645a;
+	padding: 10px;
+}
