@@ -14,7 +14,6 @@
 	background-color: #E6AD91;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	display: inline-block;
 }
 .slideshow_cell {
 	width: 1190px;
@@ -30,6 +29,6 @@
 	background-color: #bbb;
 	text-align: center;
 }
-.pict3_cell1 {
-	
-}
+.pict3_cell1 {width: 300px;}
+.pict3_cell2 {width: 570px;}
+.pict3_cell3 {width: 300px;}
