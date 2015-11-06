@@ -82,4 +82,31 @@ td {vertical-align: middle; }
 .my_container {
 	width: 1170px;
 }
+.gradient {
+	width: 400px;
+	height: 200px;
+	background: linear-gradient(to bottom, #D9E3EA, #70b0e0);
+}
+.svg {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+}
+.svg-figure {
+	fill: #c00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
