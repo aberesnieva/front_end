@@ -36,17 +36,14 @@
 	</div>
 </div>
 
-<div class="my-container row">
-	<svg class="title-triagle">
-	  <polygon points="0,0 20,0 10,12"/>
-	</svg>
-</div>
+<div class="my-container row"><div class="triangle"></div></div>
 
 <div class="my-container row">
 	<div class="my-cell-6">
 		<figure class="img-slider">
 			<div class="img-slider-placeholder is-big">
 				<div class="img-slider-prev"></div>
+				<div class="img-empty-icon-big"></div>
 				<div class="img-slider-next"></div>
 				<figcaption><strong>Project slideshow</strong></fgicaption>
 			</div>
@@ -64,8 +61,8 @@
 		<figure class="img-slider">
 			<div class="img-slider-placeholder is-med">
 				<div class="img-slider-prev"></div>
+				<div class="img-empty-icon-big"></div>
 				<div class="img-slider-next"></div>
-				<img src="img/sprite_2.png" class="img-empty-big">
 				<figcaption><strong>BLOG/PAGE</strong> slideshow</fgicaption>
 			</div>
 			<ul class="img-slider-indicator is-medium-indicator text-center">
@@ -79,6 +76,7 @@
 		<figure class="img-slider">
 			<div class="img-slider-placeholder is-small">
 				<div class="img-slider-prev"></div>
+				<div class="img-empty-icon-med"></div>
 				<div class="img-slider-next"></div>
 				<figcaption>Sidebar Slideshow</fgicaption>
 			</div>
@@ -90,38 +88,94 @@
 		</figure>
 		<h3 class="h3-sidebar-gallery">Sidebar gallery</h3>
 		<ul class="img-slider-placeholder img-set-1">
-			<div>
-			<li class="my-cell-0"></li>
-			<li class="my-cell-0"></li>
-			<li class="my-cell-0"></li>
-			<li class="my-cell-0"></li>
-			<li class="my-cell-0"></li>
-			<li class="my-cell-0"></li>
-			</div>
+			<li class="my-cell-0"><div class="img-empty-icon-small"></div></li>
+			<li class="my-cell-0"><div class="img-empty-icon-small"></div></li>
+			<li class="my-cell-0"><div class="img-empty-icon-small"></div></li>
+			<li class="my-cell-0"><div class="img-empty-icon-small"></div></li>
+			<li class="my-cell-0"><div class="img-empty-icon-small"></div></li>
+			<li class="my-cell-0"><div class="img-empty-icon-small"></div></li>
 		</ul>
 	</div>
 </div>
 
 <div class="my-container row">
 	<div class="my-cell-5">
+
+		<input checked="" type="radio" name="tab-box" id="tab-box1">
+		<input type="radio" name="tab-box" id="tab-box2">
+		<input type="radio" name="tab-box" id="tab-box3">
+		<input type="radio" name="tab-box" id="tab-box4">
+
+
+		<div id="tabs">
+			<div id="overflow">
+				<div class="inner">
+					<article>Text1</article>					
+					<article>Text2</article>					
+					<article>Text3</article>					
+					<article>Text4</article>
+				</div> <!-- .inner -->				
+			</div> <!-- #overflow -->
+		</div>
+
+
+		<div id="controls">
+			<label for="tab-box1"></label>
+			<label for="tab-box2"></label>
+			<label for="tab-box3"></label>
+			<label for="tab-box4"></label>
+		</div>
+
+		<div id="active">
+
+			<label for="tab-box1"></label>
+			<label for="tab-box2"></label>
+			<label for="tab-box3"></label>
+			<label for="tab-box4"></label>
+			
+		</div>
+
 		<ul class="tab-placeholder">
-			<li>TAB TITLE</li>
-			<li>TAB TITLE</li>
-			<li>TAB TITLE</li>
-			<li>TAB TITLE</li>
+			<a href="#box-one" class="tab1 active">TAB TITLE 1</a>
+			<a href="#box-two" class="tab2">TAB TITLE 2</a>
+			<a href="#box-three" class="tab3">TAB TITLE 3</a>
+			<a href="#box-four" class="tab4">TAB TITLE 4</a>
 		</ul>
-		<div class="tab-detail">
-			<div class="tab-text-big-tab">
-			Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+		<div class="box-wrap">
+			<div class="tab-detail active">
+				<div class="tab-text-big-tab-1" id="box-one">
+				Tab 1. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+				</div>
+				<div class="img-in-tab fl-right"><div class="img-empty-icon-small"></div>
+				</div>
 			</div>
-			<div class="img-in-tab fl-right">
+			<div class="tab-detail" id="box-two">
+				<div class="tab-text-big-tab-2">
+				Tab 2. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+				</div>
+				<div class="img-in-tab fl-right"><div class="img-empty-icon-small"></div>
+				</div>
 			</div>
+			<div class="tab-detail" id="box-three">
+				<div class="tab-text-big-tab-3">
+				Tab 3. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+				</div>
+				<div class="img-in-tab fl-right"><div class="img-empty-icon-small"></div>
+				</div>
+			</div>
+			<div class="tab-detail" id="box-four">
+				<div class="tab-text-big-tab-4">
+				VTab 4. ivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+				</div>
+				<div class="img-in-tab fl-right"><div class="img-empty-icon-small"></div>
+				</div>
+			</div>`
 		</div>
 	</div>
 	<div class="my-cell-2">
 		<ul class="tab-placeholder">
-			<li>TAB TITLE</li>
-			<li>TAB TITLE</li>
+			<a href="">TAB TITLE 1</a>
+			<a href="">TAB TITLE 2</a>
 		</ul>
 		<div class="tab-detail">Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncu
 		</div>
@@ -131,10 +185,10 @@
 <div class="my-container row">
 	<div class='my-cell-6'>
 		<ul class="img-slider-placeholder img-set-2">
-			<li class="my-cell-2"></li>
-			<li class="my-cell-2"></li>
-			<li class="my-cell-2"></li>
-			<li class="my-cell-2"></li>
+			<li class="my-cell-2"><div class="img-empty-icon-big"></div></li>
+			<li class="my-cell-2"><div class="img-empty-icon-big"></div></li>
+			<li class="my-cell-2"><div class="img-empty-icon-big"></div></li>
+			<li class="my-cell-2"><div class="img-empty-icon-big"></div></li>
 		</ul>
 	</div>
 </div>
@@ -142,8 +196,8 @@
 <div class="my-container row">
 	<div class='my-cell-6'>
 		<ul class="img-slider-placeholder img-set-3">
-			<li class="my-cell-4"></li>
-			<li class="my-cell-4"></li>
+			<li class="my-cell-4"><div class="img-empty-icon-big"></div></li>
+			<li class="my-cell-4"><div class="img-empty-icon-big"></div></li>
 		</ul>
 	</div>
 </div>
@@ -152,19 +206,111 @@
 	<div class='my-cell-6 full-page-line'></div>
 </div>
 
-<div class="triangle"></div>
+<div class="my-container row">
+	<div class="my-cell-6">
+		<h3 class="h3-text">Headline</h3>
+		<div class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
+	</div>
+</div>
 
-<footer>
-	<div class="my-container row">
+<div class="my-container row">
+	<div class="my-cell-4">
+		<h3 class="h3-text">Headline</h3>
+		<div  class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
+	</div>
+	<div class="my-cell-4">
+		<h3 class="h3-text">Headline</h3>
+		<div class='test-style'>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
+	</div>
+</div>
+
+<div class="my-container row">
+	<div class="my-cell-5">
+		<h3 class="h3-text">Headline</h3>
+		<div  class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </div>
+	</div>
+	<div class="my-cell-2">
+		<h3 class="h3-text">Headline</h3>
+		<div class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in.</div>
+	</div>
+</div>
+
+<div class="my-container row">
+	<div class="my-cell-2">
+		<h3 class="h3-text">Headline</h3>
+		<div  class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in.</div>
+	</div>
+	<div class="my-cell-2">
+		<h3 class="h3-text">Headline</h3>
+		<div class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in.</div>
+	</div>
+	<div class="my-cell-2">
+		<h3 class="h3-text">Headline</h3>
+		<div class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in.</div>
+	</div>
+	<div class="my-cell-2">
+		<h3 class="h3-text">Headline</h3>
+		<div class="test-style">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in.</div>
+	</div>
+</div>
+
+<div class="my-container row">
+	<div class='my-cell-6 full-page-line'></div>
+</div>
+
+<div class="my-container row">
+	<div class="my-cell-2">
+		<ul class="arrow_list"><div class="h3-text">Arrow list font size 13px</div>
+			<li>Quisque at massa ipsum</li>
+			<li>Maecenas a lorem augue, egestas</li>
+			<li>Cras vitae felis at lacus eleifend</li>
+			<li>Etiam auctor diam pellentesque</li>
+			<li>Nulla ac massa at dolor</li>
+			<li>Condimentum eleifend vitae vitae </li>
+		</ul>
+	</div>
+	<div class="my-cell-2">
+	</div>
+	<div class="my-cell-2">
+	</div>
+	<div class="my-cell-2">
+	</div>
+</div>
+
+<div class="my-container row">
+	<ul class="img-slider-nav">
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+</div>
+
+
+<h1>Website Contract</h1>
+
+<nav>
+	<ul>
+		<li><a href="#payment">Payment Schedule</a></li>
+		<li><a href="#support">Support &amp; Maintenance</a></li>
+		<li><a href="#hosting">Hosting Terms</a></li>
+		<li><a href="#glossary">Glossary</a></li>
+	</ul>
+</nav>
+
+
+<br>
+<br>
+<footer  class="footer">
+	<div class="my-container">
 		<div class="my-cell-3">
-			<a href="/" class="fl-left site-logo">site logo</a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
-			<div class="row">
-				<div class="footer-contact-name">Phone:</div>
+			<a href="/" class="site-logo"><strong>MODUS </strong>versus</a>
+			<div class="footer-info text-space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</div>
+			<div class="row contact_space">
+				<div class="footer-contact-name fl-left">Phone:</div>
 				<div class="footer-contact-value">182 2569 5896</div>
 			</div>
-			<div class="row">
-				<div class="footer-contact-name">email:</div>
+			<div class="row contact_space">
+				<div class="footer-contact-name fl-left">email:</div>
 				<div class="footer-contact-value">info@modu.versus</div>
 			</div>
 		</div>
