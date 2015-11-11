@@ -1,0 +1,145 @@
+body {
+	background-color:#eee;
+	color: #7f8c8c;
+	margin: 0;
+}
+.my_container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.fl_left {
+	float: left;
+}
+.fl_top {
+	float: top;
+}
+.cell_1 {
+	width: 100%;
+}
+.cell_2 {
+	width: 45%;
+	margin-right: 10%;
+}
+.cell_3 {
+	width: 30%;
+	margin-right: 5%;
+}
+[class*='cell_'] {
+	float: left;
+	margin-bottom: 20px;
+}
+[class*='cell_']:last-of-type {
+	margin-right: 0;
+}
+.form_name {
+	color: #000;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.lable_input {
+	margin-bottom: 4px;
+}
+[class*='input_'] {
+	border: 2px solid #c8caca;
+	width: 100%;
+	box-sizing: border-box;
+	min-height: 25px;
+}
+[class*='inputel_'] {
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.lable_input.elem_label {
+	margin-right: 20px;
+}
+.input_textarea {
+	min-height: 30px;
+}
+.web_input:after {
+	content: ".com";
+}
+.web_input {
+	width: 90%;	
+	position: relative;
+}
+.url_before:before {
+	content: "http://";
+}
+.label_after:after, .label_before:before {
+	content: "Label";
+}
+.elem_near_input:after, .elem_near_input:before{
+	background-color: #d3d4d5;
+	border: 2px solid #c8caca;
+	float: left;
+	position: absolute;
+	min-height: 25px;
+	box-sizing: border-box;
+	text-align: center;
+	min-width: 5%;
+}
+.displ_inline {
+	display: inline-block;
+}
+.button_go {
+	background-color: #537ce2;
+	border: 2px solid #537ce2;
+	width: 5%;
+	min-height: 25px;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.input_block_with_elem  {
+	width: 95%;
+	display: inline-block;
+	float: left;
+}
+.is_checkval_error {
+	border-color: #c00;
+}
+.is_checkval_correct {
+	border-color: #4675eb;
+}
+[class*='is_checkval_']:after {
+	font-style: italic;
+	color: white;
+	line-height: 25px;
+	width: 41%;
+	position: absolute;
+	min-height: 25px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 12px;
+		margin: 0 auto;
+}
+.is_checkval_error:after {
+	content: "Invalid entry";
+	background-color: #c00;
+	border: 2px solid #c00;
+}
+.is_checkval_correct:after {
+	content: "Correct entry";
+	background-color: #4675eb;
+	border: 2px solid #4675eb;
+}
+.cell_1.is_checkval_error .is_checkval_error:after {
+	width: 91%;
+}
+.input_block.is_checkval_error, .input_block.is_checkval_correct{
+	margin-bottom: 0;
+}
+.cell_2.is_checkval_error {
+	margin-bottom: 40px;
+}
+
+
+

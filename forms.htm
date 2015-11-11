@@ -3,12 +3,152 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Registration form</title>
+	<link href="forms.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+<form>
+<fieldset>
+	<div class="my_container form_name">RENDERED HTML</div>
+
+	<div class="my_container">
+		<div class="cell_1">
+			<label for="input_block" class="lable_input">Input Label</label>
+			<input type="text"; name="block_input"; placeholder="large-12.columns" class="input_block">
+		</div>
+	</div>	
+
+	<div class="my_container row">
+		<div class="cell_3 fl_left">
+			<label for="inline_input_1" class="lable_input">Input Label</label>
+			<input type="text"; name="inline_input_1"; placeholder="large-4.columns" class="input_inline">
+		</div>
+
+		<div class="cell_3 fl_left">
+			<label for="inline_input_2" class="lable_input">Input Label</label>
+			<input type="text"; name="inline_input_2"; placeholder="large-4.columns" class="input_inline">
+		</div>
+
+		<div class="cell_3 fl_left">
+			<label for="inline_input_3" class="lable_input lable_inline_web">Input Label</label>
+			<div class="elem_near_input web_input"><input type="text"; name="inline_input_3"; placeholder="small-9.columns" class="input_inline"></div>
+		</div>
+	</div>
+
+	<div class="my_container">
+		<div class="cell_1 fl_left">
+			<label for="select_box" class="lable_input">Select Box</label>
+			<select size="1" name="select_box" id="select_box" class="input_select">
+				<option value="0">Select 1</option>
+				<option value="1">Select 2</option>
+				<option value="1">Select three</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="my_container">
+		<div class="cell_2 fl_left">	
+			<div class="lable_input">Choose Your Favorite</div>	
+			<div class="row">
+				<label for="radio_input_1" class="lable_input elem_label">
+					<input type="radio"; name="radio_input_1" class="inputel_radio">Red
+				</label>
+				<label for="radio_input_2" class="lable_input elem_label">
+					<input type="radio"; name="radio_input_2" class="inputel_radio">Blue
+				</label>
+			</div>
+		</div>
+
+		<div class="cell_2 fl_left">
+			<div class="lable_input">Check These Out</div>	
+			<label for="checkbox_input_1" class="lable_input elem_label">
+				<input type="checkbox"; name="checkbox_input_1" class="inputel_checkbox">Checkbox 1
+			</label>
+			<label for="checkbox_input_2" class="lable_input elem_label">
+				<input type="checkbox"; name="checkbox_input_2" class="inputel_checkbox">Checkbox 2
+			</label>
+		</div>
+	</div>
+
+	<div class="my_container">
+		<div class="cell_1 fl_left">
+			<label for="textarea_input" class="lable_input">Textarea Lable</label>
+			<input type="textarea"; name="textarea_input" placeholder="small-12.columns"  class="input_textarea">
+			
+		</div>
+	</div>
+</fieldset>
+
+<fieldset>
+	<div class="my_container form_name">RENDERED HTML</div>
+	<div class="my_container">
+		<div class="cell_1">
+			<div class="elem_near_input url_before"></div>
+			<input type="text"; name="block_input"; placeholder="Enter your URL..." class="input_block">
+		</div>
+	</div>
+
+	<div class="my_container row">
+		<div class="cell_1">
+			<input type="text"; name="block_input"; placeholder="Hex Value" class="input_block_with_elem">
+			<div class="button_go">Go</div>
+		</div>
+	</div>
+
+	<div class="my_container row">
+		<div class="cell_2 fl_left">
+			<div class="elem_near_input label_before "></div>
+			<input type="text"; name="block_input"; placeholder="Value" class="input_block_with_elem">
+		</div>
+		<div class="cell_2 fl_left">
+			<input type="text"; name="block_input"; placeholder="Value" class="input_block_with_elem">
+			<div class="elem_near_input label_after "></div>
+		</div>
+	</div>
+
+	<div class="my_container row">
+		<div class="cell_2 fl_left">
+			<div class="button_go fl_left">Go</div>
+			<input type="text"; name="block_input"; placeholder="Value" class="input_block_with_elem">
+		</div>
+
+		<div class="cell_2 fl_left">
+			<input type="text"; name="block_input"; placeholder="Value" class="input_block_with_elem">
+			<div class="button_go">Go</div>
+		</div>
+	</div>
+
+</fieldset>
+
+
+<fieldset>
+	<div class="my_container form_name">RENDERED HTML</div>
+	<div class="my_container">
+		<div class="cell_2 is_checkval_error">
+			<input type="text"; name="block_input" class="input_block is_checkval_error">
+			<div class="is_checkval_error"></div>
+		</div>
+
+		<div class="cell_2 is_checkval_correct">
+			<input type="text"; name="block_input" class="input_block is_checkval_correct">
+			<div class="is_checkval_correct"></div> 
+		</div>
+	</div>
+	<div class="my_container">
+		<div class="cell_1 is_checkval_error">
+			<input type="text"; name="block_input" class="input_block is_checkval_error">
+			<div class="is_checkval_error"></div>
+		</div>
+	</div>
+
+</fieldset>
+
+</form>
+
 <form name="form_login">
 <fieldset>
 	<label for="first_name">First name</label>
-	<input type="text"; name="first_name"; id="first_name"; placeholder="First name" autofocus >
+	<input type="text"; name="first_name"; id="first_name"; placeholder="First name">
 	<br><br>
 
 	<label for="last_name">Last name</label>
