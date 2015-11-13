@@ -44,3 +44,20 @@
 	position: relative;
 	z-index: 1;
 }
+@keyframes fromTop {
+	from {top: 0%;}
+	to {top: 50%;}
+}
+.modal_form {
+	animation: fromTop 4s;
+}
+
+
+
+
+
+
+
+
+
+

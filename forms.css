@@ -1,3 +1,9 @@
+*, *:after, *:before {
+
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
 body {
 	background-color:#eee;
 	color: #7f8c8c;
@@ -119,7 +125,7 @@ body {
 	box-sizing: border-box;
 	text-align: center;
 	font-size: 12px;
-		margin: 0 auto;
+	margin: 0 auto;
 }
 .is_checkval_error:after {
 	content: "Invalid entry";
@@ -137,9 +143,141 @@ body {
 .input_block.is_checkval_error, .input_block.is_checkval_correct{
 	margin-bottom: 0;
 }
-.cell_2.is_checkval_error {
+.cell_2.is_checkval_error, .cell_1.is_checkval_error{
 	margin-bottom: 40px;
 }
+/*on the lesson*/
+.my-form {
+	display: block;
+}
+label.inline {
+	display: inline-block;
+}
+.form-field {
+	border: 1px solid #ccc;
+	padding: 4px 8px;
+	color: #ccc;
+	width: 100%;
+}
+.form-field:focus {
+	outline: none;
+	border-color: #008CBA;
+	color: #008CBA;	
+}
+textarea.form-field {
+	min-height: 80px;
+}
+.error .form-field {
+	border-color: #c00;
+}
+.confirm .form-field {
+	border-color: blue;
+}
+.confirm label {
+	color: blue;
+}
+.error label {
+	color: #c00;
+}
+.error .lbl-response, .confirm .lbl-response {
+	display: block;
+}
+.error-lbl {
+	color: #fff;
+	background-color: #c00;
+}
+.confirm-lbl {
+	color: #fff;
+	background-color: blue;
+}
+.lbl-response {
+	padding: 4px;
+	font-size: 10px;
+	font-style: italic;
+}
+input[type="url"] {
+	padding-left: 52px;
+}
+.custom-url {
+	position: relative;
+}
+.custom-url:before {
+	content: "http://";
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	padding: 0 5px;
+	background-color: #eee;
+	border: 1px solid #eee;
+	font-size: 10px;
+	line-height: 19px;
+}
+.custom-chb {
+	position: absolute;
+	left: -99999px;
+}
+.custom-chb + label{
+	padding-left: 30px;
+	line-height: 20px;
+	cursor: pointer;
+	position: relative;
+}
+.custom-chb + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #ccc;
+}
+.custom-chb:checked + label:before {
+	border-color: #666;
+}
+.custom-chb:checked + label:after {
+	content: '';
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #666;
+	background-color: #666;
+} 
+
+.my-link {
+	color: #fff;
+	-webkit-transition: background 1s;
+	transition:background 1s; 
+	background-color: #666;
+	display: block;
+	padding: 10px;
+}
+.my-link:hover {
+	background: #c00;
+}
+@keyframes progressBar {
+	from {width: 1px;}
+	to {width: 100%;}
+}
+.div {
+	width: 1px;
+	height: 100px;
+	background-color: #c00;
+	animation: progressBar 4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
