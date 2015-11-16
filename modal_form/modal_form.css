@@ -1,3 +1,8 @@
+.body_style {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+}
 .modal_form {
 	background-color: rgba(220, 220, 220, 0.3);
 	height: 300px;
@@ -6,10 +11,11 @@
 	box-shadow: 0 0 10px #777;
 	border-radius: 3px;
 	position: absolute;
+	margin: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999;
+    z-index: 999;
 }
 .form_title {
 	background-color: #B5B3B3;
@@ -22,10 +28,12 @@
 	font-weight: 800;
 	vertical-align: top;
 	float:right;
-	padding: 0 4px 3px 4px;
+	padding: 0 5px 0px 5px;
 	background-color: rgba(218, 33, 33, 0.5);
 	border-radius: 3px;
 	border: 2px;
+	height: auto;
+	font-style: normal;
 }
 .sect_button {
 	position: absolute;
@@ -44,14 +52,22 @@
 	position: relative;
 	z-index: 1;
 }
-@keyframes fromTop {
-	from {top: 0%;}
-	to {top: 50%;}
+@keyframes FormfromTop {
+	0% {top: 0%;}
+	50% {top: 50%;}
+	100% {top: 50%;}
 }
 .modal_form {
-	animation: fromTop 4s;
+	animation: FormfromTop 4s;
 }
-
+@keyframes showButton {
+	0% {height: 0px; font-size: 0;}
+	50% {height: 0px; font-size: 0;}
+	100% {height: auto; font-size: auto;}
+}
+.button_close {
+	animation: showButton 2s;
+}
 
 
 
