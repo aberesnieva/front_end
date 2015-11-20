@@ -1,0 +1,110 @@
+body {
+	color: #7f8c8c;
+	font: 80% 'Open Sans', Arial, sans-serif;
+}
+.row {
+	margin-bottom: 40px;
+}
+.btn{
+	border:none;
+	color: #fff;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus, .btn:hover {
+	outline: none;
+	color: #fff;
+}
+.img-chain-icon,.img-chain-icon:focus {
+	height: 40px;
+	width: 40px;
+	background-image: url('../modus/img/sprite_icon.png');
+	background-position: -319px 4px;
+	background-repeat: no-repeat;
+}
+.icon-hover, .icon-hover:focus {
+	background-color: #528b86;
+}
+.icon-hover:hover, .icon-hover:focus:hover {
+	background-color: #e2534b;
+}
+.text-hover, .text-hover:focus, .text-hover:active:focus {
+	vertical-align: top;
+	color: #7f8c8c;
+	_font-size: 2em;
+	text-decoration: none;
+}
+.text-hover:hover {
+	text-decoration: none;
+	color: #e2534b;
+}
+.btn-hover:hover, .btn-hover:focus:hover{
+	background-color: #e8645a;
+	box-shadow: 0 3px 0 #e2534b;
+}
+.btn-hover,.btn-hover:focus{
+	background-color: #76caca;
+	box-shadow: 0 3px 0 #62bdbd;
+}
+.my-nav-btn {
+	background-color: #98a3a3;
+	margin-right: 20px;
+	box-shadow: 0 3px 0 #7f8c8c;
+}
+.my-nav-btn:hover, .my-nav-btn:focus:hover, .my-nav-btn:focus {
+	background-color: #62a29e;
+	box-shadow: 0 3px 0 #528b86;
+}
+.text-sm {font-size: 13px;}
+.text-md {font-size: 14px;}
+.text-md-1 {font-size: 16px;}
+.text-lg {font-size: 20px;}
+
+.pagination-color>li>a, .pagination-color>li>span {
+	background-color: #8c9898;
+	color: #fff;
+	font-size: 16px;
+	margin-right: 20px;
+	border-radius: 6px;
+	border:none;
+	font-weight: 600;
+}
+.pagination-color>li>a:hover, .pagination-color>li>a:focus:hover, .pagination-color>li>span:hover, .pagination-color>li>span:focus:hover {
+	background-color: #e5655d;
+	color: #fff;
+}
+.pagination-color>li>a:focus, .pagination-color>li>span:focus {
+	background-color: #649792;
+	color: #fff;
+}
+.pagination-lg>li:first-child>a, .pagination-lg>li:first-child>span {
+	margin-right: 30px;
+}
+.pagination-lg>li:last-child>a, .pagination-lg>li:last-child>span {
+	margin-left: 30px;
+}
+.img-empty-icon-big {
+	background: #f8f8f8 url('../modus/img/sprite_icon.png') no-repeat;
+	position: absolute;
+	top: 37%;
+	left: 39%;
+	background-position:-40px 0px;
+	width: 20%;
+	height: 35%;
+}
+.img-slider-placeholder {
+	width: 100%;
+	height: 270px;
+	background-color: #f8f8f8;
+	font-color: #b0b8b9;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 5px 0 #e5e6e6;
+	position: relative;
+}
+p {
+	margin-bottom: 30px;
+}
